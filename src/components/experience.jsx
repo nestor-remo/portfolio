@@ -26,9 +26,17 @@ const Experience = () => {
 
     return (
         <div>
-            
+            <h1>Experience</h1>
+            <div className='projects'>
+                {experience.map((experience, index) => {
+                    return (
+                    <Card key={index} title={experience.title} description={experience.description} />
+                    )
+                })}
+            </div>
         </div>
     )
 }
+
 
 export default Experience;

@@ -1,9 +1,8 @@
 import ParticlesComponent from './components/particles.jsx'
-import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/navbar.jsx';
 import Project from './components/project.jsx';
 import Experience from './components/experience.jsx';
-import Contact from './components/contact.jsx';
+import Skills from './components/skills.jsx';
 import Hero from './components/hero.jsx';
 
 
@@ -17,12 +16,18 @@ function App() {
       <NavBar />
       
       <div className='content'>
-        <Routes>
-          <Route path='/' element={<Hero />} />
-          <Route path='/projects' element={<Project />} />
-          <Route path='/experience' element={<Experience />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
+        <section id='hero'>
+          <Hero />
+        </section>
+        <section id='experience'>
+          <Experience />
+        </section>
+        <section id='projects'>
+          <Project />
+        </section>
+        <section id='skills'>
+          <Skills />
+        </section>
       </div>
     </div>
   )

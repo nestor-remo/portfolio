@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 #root {
-  max-width: 1280px;
+  width: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -21,4 +26,14 @@
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 48rem;
+}
+
+.content {
+  padding-top: 100px;
+}
+
+section{
+  min-height: 100vh;
+  padding: 30px;
+  scroll-margin-top: 100px;
 }
