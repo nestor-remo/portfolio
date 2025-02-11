@@ -1,30 +1,43 @@
 import React from 'react';
-import Card from './card';
+
+function Card({ title, description, skills, links }) {
+    return (
+        <div className='card'>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <p>{skills}</p>
+            <div className='links'>
+                <a href={links.github}>GitHub</a>
+                <a href={links.website}>Website</a>
+            </div>
+        </div>
+    );
+}
 
 const Project = () => {
     const projects = [
         {
-            title: 'Project 1',
-            skills: 'React, Express, Railway',
-            description: 'Developed a full stack application',
+            title: 'Tempestive',
+            skills: 'React, WeatherBit API',
+            description: 'Weather web-app',
             links: {
                 github: 'https://github.com',
                 website: 'https://website.com'
             },
         },
         {
-            title: 'Project 2',
-            skills: 'React, Express, Railway',
-            description: 'Developed a full stack application',
+            title: 'Hobby Hub',
+            skills: 'React, Supabase',
+            description: 'Social media site for hobbies',
             links: {
                 github: 'https://github.com',
                 website: 'https://website.com'
             },
         },
         {
-            title: 'Project 3',
-            skills: 'React, Express, Railway',
-            description: 'Developed a full stack application',
+            title: 'Flight-Aid',
+            skills: 'React, Express, Railway, PostgreSQL',
+            description: 'Vacation planning web-app',
             links: {
                 github: 'https://github.com',
                 website: 'https://website.com'
@@ -39,7 +52,7 @@ const Project = () => {
             <div className='projects'>
                 {projects.map((project, index) => {
                     return (
-                    <Card key={index} title={project.title} description={project.description} />
+                    <Card key={index} title={project.title} description={project.description} skills={project.skills} links={project.links} />
                     )
                 })}
             </div>

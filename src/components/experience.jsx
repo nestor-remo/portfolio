@@ -1,24 +1,33 @@
 import React from 'react';
-import Card from './card';
+
+function Card({ title, description, date }) {
+    return (
+        <div className='card'>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <p>{date}</p>
+        </div>
+    );
+}
+
 
 const Experience = () => {
 
-
     const experience = [
         {
-            title: 'Software Developer',
-            description: 'Developed software for the company',
-            date: '2021'
+            title: 'ASSURE-US Undergraduate Researcher',
+            description: 'Developed a pairs trading algorithm to predict stock prices',
+            date: '2023'
         },
         {
-            title: 'Software Developer',
-            description: 'Developed software for the company',
-            date: '2021'
+            title: 'Instructional Assistant',
+            description: 'Graded assignments and gave feedback to students in a linear algebra course',
+            date: '2024-Present'
         },
         {
-            title: 'Software Developer',
-            description: 'Developed software for the company',
-            date: '2021'
+            title: 'ACM Open Source Board Member',
+            description: 'Worked on ACM Open Source projects and helped organize workshops',
+            date: '2025-Present'
         }
     ]
 
