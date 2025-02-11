@@ -1,9 +1,10 @@
+import { Element } from 'react-scroll';
 import ParticlesComponent from './components/particles.jsx'
 import NavBar from './components/navbar.jsx';
 import Project from './components/project.jsx';
 import Experience from './components/experience.jsx';
 import Skills from './components/skills.jsx';
-import Hero from './components/hero.jsx';
+import About from './components/about.jsx';
 
 
 import './App.css'
@@ -16,18 +17,18 @@ function App() {
       <NavBar />
       
       <div className='content'>
-        <section id='hero'>
-          <Hero />
-        </section>
-        <section id='experience'>
+        <Element name='about' className='section first'>
+          <About />
+        </Element>
+        <Element name='experience' className='section'>
           <Experience />
-        </section>
-        <section id='projects'>
+        </Element>
+        <Element name='projects' className='section'>
           <Project />
-        </section>
-        <section id='skills'>
+        </Element>
+        <Element name='skills' className='section'>
           <Skills />
-        </section>
+        </Element>
       </div>
     </div>
   )
