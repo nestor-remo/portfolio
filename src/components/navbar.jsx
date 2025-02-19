@@ -1,16 +1,42 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import './styles/navbar.css';
 
 const NavBar = () => {
-
     return (
-        <nav>
-            <ul>
-                <Link to="about" className="link" smooth={true} duration={500} >About</Link>
-                <Link to="experience" className="link" smooth={true} duration={500}>Experience</Link>
-                <Link to="projects" className="link" smooth={true} duration={500}>Projects</Link>
-                <Link to="skills" className="link" smooth={true} duration={500}>Skills</Link>
+        <nav className="flex sticky top-5 w-full h-25 bg-primary bg-opacity-30 shadow-md rounded-2xl z-1000">
+            <ul className="flex justify-evenly w-full px-8 my-8 mx-12">
+                <Link 
+                    to="about" 
+                    smooth={true} 
+                    duration={500} 
+                    className="text-black text-2xl font-display font-medium font-spartan hover:text-green-600 cursor-pointer"
+                >
+                    About
+                </Link>
+                <Link 
+                    to="experience" 
+                    smooth={true} 
+                    duration={500} 
+                    className="text-black text-2xl font-display font-medium font-spartan hover:text-green-600 cursor-pointer"
+                >
+                    Experience
+                </Link>
+                <Link 
+                    to="projects" 
+                    smooth={true} 
+                    duration={500} 
+                    className="text-black text-2xl font-display font-medium font-spartan hover:text-green-600 cursor-pointer"
+                >
+                    Projects
+                </Link>
+                <Link 
+                    to="skills" 
+                    smooth={true} 
+                    duration={500} 
+                    className="text-black text-2xl font-display font-medium font-spartan hover:text-green-600 cursor-pointer"
+                >
+                    Skills
+                </Link>
             </ul>
         </nav>
     );
