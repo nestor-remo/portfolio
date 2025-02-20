@@ -5,6 +5,12 @@
   --color-primary: rgba(127, 255, 212, 0.3);
 }
 
+@layer base {
+  h1 {
+    font-size: var(--text-3xl);
+  }
+}
+
 :root {
   background-color: #242424;
 }
