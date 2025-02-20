@@ -34,9 +34,9 @@ const Experience = () => {
 
 
     return (
-        <div>
+        <div className="w-full">
             <h1>Experience</h1>
-            <div className='projects'>
+            <div>
                 {experience.map((experience, index) => {
                     return (
                     <Card key={index} title={experience.title} description={experience.description} />

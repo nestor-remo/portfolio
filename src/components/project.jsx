@@ -47,7 +47,7 @@ const Project = () => {
     
 
     return (
-        <div>
+        <div className="w-full">
             <h1>Projects</h1>
             <div className='projects'>
                 {projects.map((project, index) => {

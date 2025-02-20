@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const NavBar = () => {
     return (
-        <nav className="flex sticky top-5 w-full h-25 bg-primary bg-opacity-30 shadow-md rounded-2xl z-1000">
+        <nav className="flex sticky top-5 h-25 bg-primary bg-opacity-30 shadow-md rounded-2xl z-1000">
             <ul className="flex justify-evenly w-full px-8 my-8 mx-12">
                 <Link 
                     to="about" 

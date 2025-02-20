@@ -13,10 +13,10 @@ function Icon ({name, icon}) {
 const Skills = () => {
     
     return (
-        <section>
+        <div className="w-full">
             <h1 className="text-3xl font-bold">Skills</h1>
             <br></br>
-            <div className="flex justify-center flex-wrap gap-5 mt-6">
+            <div className="flex justify-center flex-wrap gap-5 mt-6 w-full">
                 <Icon name='React' icon={<SiReact />} />
                 <Icon name='JavaScript' icon={<SiJavascript />} />
                 <Icon name='HTML5' icon={<SiHtml5 />} />
@@ -30,7 +30,7 @@ const Skills = () => {
                 <Icon name='Supabase' icon={<SiSupabase />} />
                 <Icon name='Git' icon={<SiGit />} />
             </div>
-        </section>
+        </div>
     )
 } 
 
