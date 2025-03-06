@@ -3,7 +3,7 @@ import { SiReact, SiJavascript, SiHtml5, SiPython, SiCplusplus, SiRailway, SiPos
 
 function Icon ({name, icon}) {
     return (
-        <div className='flex flex-col items-center w-[calc(25%-20px)] text-xl'>
+        <div className='flex items-center space-x-2 rounded-md border-white/10 bg-primary p-4'>
             {icon}
             <p>{name}</p>
         </div>
@@ -14,9 +14,9 @@ const Skills = () => {
     
     return (
         <div className="w-full">
-            <h1 className="text-3xl font-bold">Skills</h1>
+            <h1 className="text-left text-5xl font-bold">Skills</h1>
             <br></br>
-            <div className="flex justify-center flex-wrap gap-5 mt-6 w-full">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <Icon name='React' icon={<SiReact />} />
                 <Icon name='JavaScript' icon={<SiJavascript />} />
                 <Icon name='HTML5' icon={<SiHtml5 />} />

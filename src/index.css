@@ -3,6 +3,7 @@
 @theme {
   --font-display: "League Spartan", sans-serif;
   --color-primary: rgba(127, 255, 212, 0.3);
+  --color-grayish: text-white/80;
 }
 
 @layer base {

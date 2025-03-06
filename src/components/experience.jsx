@@ -35,7 +35,7 @@ const Experience = () => {
 
     return (
         <div className="w-full">
-            <h1>Experience</h1>
+            <h1 className='text-left text-5xl font-bold'>Experience</h1>
             <div>
                 {experience.map((experience, index) => {
                     return (
