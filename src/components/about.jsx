@@ -2,7 +2,7 @@ import React from 'react';
 import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
 import { FaFileAlt } from 'react-icons/fa';
 
-function Icon ({ icon, link}) {
+function Icon ({ icon, link }) {
     return (
         <div onClick={() => window.open(link)} className='cursor-pointer text-2xl'>
             {icon}
@@ -12,8 +12,8 @@ function Icon ({ icon, link}) {
 
 const About = () => {
     return (
-        <div className='flex flex-col gap-4'>
-            <h1 className="text-left text-5xl font-bold"> Hello, I'm <span className="text-green-600">Nestor</span></h1>
+        <div className='flex flex-col gap-4 sm:top-10'>
+            <h1 className="text-left text-4xl sm:text-3xl lg:text-5xl font-bold"> Hello, I'm <span className="text-green-600">Nestor</span></h1>
             <p className="text-left"> Currently studying computer science <a className="hover:underline text-green-600" href="https://www.fullerton.edu/about/default.aspx" target='_blank'>@CSUF. </a>
                 I'm passionate about web development and open source. I'm always looking for new opportunities to learn and grow as a developer.
                 Proficient in React, Javascript/Typescript, Express.js, and Python.
